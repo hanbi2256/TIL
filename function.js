@@ -38,3 +38,27 @@ for(const arg of args)//args 값을 차례대로 출력
 }
 printAll('Hi', 'coding', 'hanbi');
 
+
+//Return a Value
+function sum(a, b)
+{
+    return a + b;
+}
+const result = sum(1,2);//3
+console.log(`sum: ${sum(1,2)}`);
+
+const sump=sum;
+console.log(sump(1,3));
+
+//Arrow function
+const simpleprint=()=> console.log('simpleprint');
+const add=(a,b)=>a+b;
+
+//IIEF
+(function hello()
+{
+    console.log('IIEF');
+})();
+
+
+
