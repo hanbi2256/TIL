@@ -182,5 +182,17 @@ else{
     console.log("탈락");
 }
  
+for(1=0;1<100;i++)
+{
+    console.log(i);
+}
+
+for(i=0;i<50;i++)
+{
+    if(i%3==0)
+    {
+        console.log("짝");
+    }
+}
 
 
