@@ -195,4 +195,17 @@ for(i=0;i<50;i++)
     }
 }
 
+function greet()
+{
+    console.log("안녕 내 이름은 제시카야");
+}
+function greet();
+
+function f(message)
+{
+    console.log(message);
+}
+console.log("내이름은 홍승재");
+
+
 
