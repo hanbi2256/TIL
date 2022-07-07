@@ -127,6 +127,85 @@ let animals= [
  console.log(animals.indexOf('Human'));
  //해당 어레이에는 “Cat” 이 있는가?
  console.log(animals.indexOf('Cat'));
+
+
+ a=4;
+ if(a<0)
+ {
+    console.log("음수");
+ }
+ else {
+    console.log("양수");
+
+ }
  
+ a=56;
+ 
+ if(a>=90&&a<=100)
+ {
+    console.log("A");
+ }
+ else if(a>=80&&a<=89)
+ {
+    console.log("B");
+ }
+ else if(a>=70&&a<=79)
+ {
+    console.log("C");
+ }
+ else if(a>=60&&a<=69)
+ {
+    console.log("D");
+ }
+else 
+{
+    console.log("F");
+}
+input : let skills = ["HTML","CSS","Javascript","React"]
+output: 합격 
+
+input:let skills = ["HTML","CSS","Javascript"] 
+output: 예비 
+
+input:let skills = ["HTML","CSS"] 
+output: 탈락
+
+if(skills[0], skills[1], skills[2], skills[3])
+{
+    console.log("합격");
+}
+else if(skills[0], skills[1], skills[2]||skills[0], skills[1], skills[3])
+{
+    console.log("예비");
+}
+else{
+    console.log("탈락");
+}
+ 
+for(1=0;1<100;i++)
+{
+    console.log(i);
+}
+
+for(i=0;i<50;i++)
+{
+    if(i%3==0)
+    {
+        console.log("짝");
+    }
+}
+
+function greet()
+{
+    console.log("안녕 내 이름은 제시카야");
+}
+function greet();
+
+function f(message)
+{
+    console.log(message);
+}
+console.log("내이름은 홍승재");
+
 
 
