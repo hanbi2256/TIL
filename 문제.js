@@ -206,6 +206,22 @@ function f(message)
     console.log(message);
 }
 console.log("내이름은 홍승재");
+function meetAt(year,month,date)
+{
+    if(year&&month&&date)
+    {
+        return `${year}년 ${month}월 ${date}일`
+    }
+    else if(year&&month)
+    {
+        return `${year}년 ${month}월`
+    }
+    else (year)
+    {
+        return `${year}일`
+    }
+}
+console.log(meetAt(2022, 1, 7));
 
 
 
