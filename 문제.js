@@ -207,5 +207,49 @@ function f(message)
 }
 console.log("내이름은 홍승재");
 
+//한번 영화 어벤져스의 캐릭터 아이언맨과 캡틴 아메리카의 정보를 객체안에 집어넣자
+ const ironMan = {
+     name: '토니 스타크',
+     actor: '로버트 다우니 주니어',
+     alias: '아이언맨'
+ };
+
+const captainAmerica = {
+     name: '스티븐 로저스',
+    actor: '크리스 에반스',
+     alias: '캡틴 아메리카'
+ };
+
+ function print(hero) {
+     const text = `${hero.alias}(${hero.name}) 역할을 맡은 배우는 ${hero.actor
+         } 입니다.`;
+     console.log(text);
+ }
+
+print(ironMan);
+ print(captainAmerica);
+
+const ironMan = {
+    name: '토니 스타크',
+    actor: '로버트 다우니 주니어',
+    alias: '아이언맨'
+};
+
+const captainAmerica = {
+    name: '스티븐 로저스',
+    actor: '크리스 에반스',
+    alias: '캡틴 아메리카'
+};
+
+function print(hero)
+{
+    const{alias, name, actor}=hero;
+    const text=`${alias}(${name})역할을 맡은 배우는
+    ${actor}입니다`
+    console.log(text);
+}
+print(ironMan);
+print(captainAmerica);
+
 
 
