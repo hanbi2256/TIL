@@ -313,6 +313,36 @@ console.log(numbers.sum);
 console.log(numbers.sum);
 console.log(numbers.sum);
 
+const doggy={
+    name:'흰둥이',
+    sound:'멍멍',
+    age:2,
+};
+for(let key in doggy)
+{
+    console.log(`${key}:${doggy[key]}`);
+}
+
+for(let i=0;i<10;i++)
+{ if(i===2) continue;//다음 루프를 실행
+
+console.log(i);
+if(i===5) break;//반복문을 끝내기
+}
+
+
+function sumOf(numbers)
+{
+    let sum=0;
+    for( let i=0;i<numbers.length;i++)
+    {
+        sum+=numbers[i];
+    }
+    return sum;
+}
+
+const result=sumOf([1, 2, 3, 4,5]);
+console.log(result);
 
 
 
