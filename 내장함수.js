@@ -41,7 +41,7 @@ const superheroes=['아이언맨', '캡틴 아메리카', '토르', '닥터 스�
 const index=superheroes.indexOf('토르');
 console.log(index);
 
-findlndex
+//findlndex
 //배열 안에 있는 값이 객체 이거나 배열일때
 
 const todos = [
@@ -69,3 +69,37 @@ const todos = [
 
 const index = todos.findIndex(todo => todo.id === 3);
 console.log(index);
+
+
+//fine
+//찾아낸 값 자체를 반환
+const todos = [
+    {
+        id: 1,
+        text: '자바스크립트 입문',
+        done: true
+    },
+    {
+        id: 2,
+        text: '함수 배우기',
+        done: true
+    },
+    {
+        id: 3,
+        text: '객체와 배열 배우기',
+        done: true
+    },
+    {
+        id: 4,
+        text: '배열 내장함수 배우기',
+        done: false
+    }
+];
+const todo=todos.find(todo=>todo.id===3);
+console.log(todo);
+
+
+
+
+
+
