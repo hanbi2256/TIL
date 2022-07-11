@@ -344,5 +344,17 @@ function sumOf(numbers)
 const result=sumOf([1, 2, 3, 4,5]);
 console.log(result);
 
+//10보다 큰 수 반환하기
+function countBiggerThanTen(numbers) 
+{
+   
+   return  numbers.filter(number=>number>10);
+}
+
+const count = countBiggerThanTen([1, 2, 3, 5, 10, 20, 30, 40, 50, 60]);
+console.log(count); 
+
+
+
 
 
