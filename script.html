@@ -9,21 +9,15 @@
 </head>
 <body>
     <script>
-        let grobal="전역변수";
+        let score=88;
         function func()
         {
-            let local="로컬";
-        document.write("함수 안 local="+local+"<br>");
-        document.write("함수 안 grobal="+grobal+"<br>");
+            let score=77;
+            document.write("함수 안="+score);
+            document.write("<br>");
         }
         func();
-        document.write("함수 밖 grobal="+grobal);
-
+        document.write("함수 밖="+score);
     </script>
-    // 전역변수는 함수 안 함수 밖 둘다 접근가능
-    // 지역변수는 함수 안에서만 접근가능
     
-    // 지역변수는 함수 끝날때 사라짐
-    // 전역변수는 프로그램 끝날때 까지 있음
-</body>
 </html>
