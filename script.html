@@ -5,20 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>script 연습</title>
-    <script>
-        function sayHello()
-        {
-            let who;
-            who=prompt("이름을 알려주세요", who);
-            alert(who+"씨 안녕하세요");
-        }
-    </script>
+  
 </head>
 <body>
-    <p>버튼을 눌러 보세요</p>
-    <from>
-        <input type="button" value="button" onclick="sayHello()">
-    </from>
+    <p>다음 버튼을 눌러보세요</p>
+    <input type="button" value="요기요" onclick="good()">
+    <script>
+        function good()
+        {
+            document.write("참 잘했어요");
+        }
+    </script>
+   
     
 </body>
 </html>
