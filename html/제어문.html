@@ -10,12 +10,13 @@
 
 <body>
     <script>
-        let arScore=[22, 56, 78, -89,54];
-        for(let i=0;i<5;i++)
-        {
-            if(arScore[i]<0||arScore[i]>100) break;
-            document.write(i+"번째 학생의 성적:"+arScore[i]+"<br>");
+        let grade;
+        for (; ;) {
+            grade = Number(prompt("학년을 입력하세요(1~6)"));
+            if (grade >= 1 && grade <= 6) break;
+            alert("잘못 입력했습니다. 다시 입력해주세요")
         }
+        document.write(grde + "학년을 입력했습니다");
     </script>
 
 </body>
