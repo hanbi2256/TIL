@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>조건문</title>
 </head>
+
 <body>
     <script>
-        let num=prompt("숫자 하나를 입력하세요")
-        if(num%2==0)
-        {
-            document.write(num+"은 짝수입니다");
-            alert("짝수는 2로 나누어 떨어지는 수입니다");
+        let menu = prompt("통화는 1번, 문자는 2번, 영상통화는 3번");
+        switch (Number(menu)) {
+            case 1:
+                document.write("전화를 겁니다");
+                break;
+            case 2:
+                document.write("문자를 보냅니다");
+                break;
+            case 3:
+                document.write("영상 통화를 연결합니다");
+                break;
+            default:
+                document.write("잘못 입력하셨습니다");
+                break;
         }
-        else{
-            document.write(num+"은(는) 짝수가 아닙니다");
-        }
+
     </script>
-    
+
 </body>
+
 </html>
