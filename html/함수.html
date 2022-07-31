@@ -10,19 +10,17 @@
 
 <body>
     <script>
-        function sum(n) {
-            if (n == undefined) n = 100;
-            let s = 0;
-            for (let i = 0; i <= n; i++) 
+        function total()
+        {
+            let s=0;
+            for(let i=0;i<arguments.length;i++)
             {
-                s+=i;
-
+                s+=arguments[i];
             }
             return s;
-
         }
-        document.write("1~10="+sum(10)+"<br>");
-        document.write("1~100="+sum()+"<br>");
+        document.write(total(2, 5, 3)+"<br>");//10
+        document.write(total(1, 5,8, 8, 12, 14)+"<br>");//48
     </script>
 
 </body>
