@@ -10,18 +10,23 @@
 
 <body>
     <script>
-        function total()
-        {
-            let s=0;
-            for(let i=0;i<arguments.length;i++)
-            {
-                s+=arguments[i];
-            }
-            return s;
-        }
-        document.write(total(2, 5, 3)+"<br>");//10
-        document.write(total(1, 5,8, 8, 12, 14)+"<br>");//48
+    function byvalue(a)
+    {
+        a=999;
+
+    }
+    function byref(a)
+    {
+        a[0]=9999;
+    }
+    let int=1000;
+    let ar=[1000, 2000, 3000];
+    document.write("int = "+int+", ar[0]="+ar[0]+"<br>");
+    byvalue(int);
+    byref(ar);
+    document.write("int ="+int+", ar[0]="+ar[0]+"<br>");
     </script>
+
 
 </body>
 
