@@ -10,21 +10,13 @@
 
 <body>
     <script>
-    function byvalue(a)
-    {
-        a=999;
+        function add(a,b)
+        {
+            return a+b;
 
-    }
-    function byref(a)
-    {
-        a[0]=9999;
-    }
-    let int=1000;
-    let ar=[1000, 2000, 3000];
-    document.write("int = "+int+", ar[0]="+ar[0]+"<br>");
-    byvalue(int);
-    byref(ar);
-    document.write("int ="+int+", ar[0]="+ar[0]+"<br>");
+        }
+        let c=7-add(2, 3);
+        document.write(c);
     </script>
 
 
