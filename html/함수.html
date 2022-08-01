@@ -10,21 +10,18 @@
 
 <body>
     <script>
-        function sum(n)
+        function outer()
         {
-            function add(a, b)
+            let outvlaue=5678;
+            function inner()
             {
-                return a+b;
+                let invalue=1234;
+                document.write("outvalue="+outvlaue+"<br>");
             }
-            let s=0;
-            for(let i=0;i<=n;i++)
-            {
-                s=add(s, i);
-            }
-            return s;
+            inner();
+            document.write("invalue="+invalue+"<br>");
         }
-        document.write("1~100="+sum(100)+"<br>");
-        document.write("2+3="+add(2+3)+"<br>"); //에러
+        outer();
     </script>
 
 
