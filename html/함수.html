@@ -10,11 +10,14 @@
 
 <body>
     <script>
-        document.write('Number("1234"):'+Number("1234")+"<br>");
-        document.write('Number("12개"):'+Number("12개")+"<br>");
-        document.write('parseInt("12개"):'+parseInt("12개")+"<br>");
-        document.write('Number("3.1415):'+Number("3.1415")+"<br>");
-        document.write('parseFloat("3.14원주율"):'+parseFloat("3.14원주율")+"<br>");
+        let hex="0x1a"
+        document.write("0x1a="+parseInt(hex, 16)+"<br>");
+        document.write("0x1a="+parseInt(hex)+"<br>");
+        document.write("0x1a="+Number(hex)+"<br>");
+
+        let decimal="12"
+        document.write("12(10)="+parseInt(decimal, 10)+"<br>");
+        document.write("12(16)="+parseInt(decimal, 16)+"<br>");
         
     </script>
 
