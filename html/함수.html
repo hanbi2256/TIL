@@ -10,16 +10,16 @@
 
 <body>
     <script>
-        function outcount()
-        {
-            let count=0;
-
-            setInterval(function(){
-                count++;
-                document.write(count+"초 지났습니다."+"<br>");
-            },1000);
-        }
-        outcount();
+       let body;
+       if(confirm("더할래 곱할래")==true)
+       {
+        body="return a+b;";
+       }
+       else{
+        body="return a*b;";
+       }
+       let add= new function("a", "b", body);
+       document.write("result= "+add(2,3)+"<br>"); 
         
     </script>
 
