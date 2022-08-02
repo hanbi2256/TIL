@@ -10,17 +10,16 @@
 
 <body>
     <script>
-        let add = function (a, b) {
-            return a + b;
+        function outer()
+        {
+            let value=1234;
+            function inner()
+            {
+                document.write("value="+value+"<br>");
+            }
+            inner();
         }
-        let multi = function (a, b) {
-            return a * b;
-        }
-        function calc(a, b, f) {
-            return f(a, b);
-        }
-        document.write("2+3=" + calc(2, 3, add) + "<br>");
-        document.write("2*3=" + calc(2, 3,multi) + "<br>");
+        outer();
     </script>
 
 
