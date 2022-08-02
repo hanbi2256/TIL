@@ -10,15 +10,20 @@
 
 <body>
     <script>
-        let add=function(a,b)
-        {
-            return a+b;
+        let add = function (a, b) {
+            return a + b;
         }
-        let plus=add;
-        document.write("2+3="+plus(2, 3));
+        let multi = function (a, b) {
+            return a * b;
+        }
+        function calc(a, b, f) {
+            return f(a, b);
+        }
+        document.write("2+3=" + calc(2, 3, add) + "<br>");
+        document.write("2*3=" + calc(2, 3,multi) + "<br>");
     </script>
 
 
 </body>
-         
+
 </html>
