@@ -10,18 +10,11 @@
 
 <body>
     <script>
-        function outer()
+        let add=function(a,b)
         {
-            let outvlaue=5678;
-            function inner()
-            {
-                let invalue=1234;
-                document.write("outvalue="+outvlaue+"<br>");
-            }
-            inner();
-            document.write("invalue="+invalue+"<br>");
-        }
-        outer();
+            return a+b;
+        };
+        document.write("2+3="+add(2,3));
     </script>
 
 
