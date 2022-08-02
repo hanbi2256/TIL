@@ -10,16 +10,18 @@
 
 <body>
     <script>
-       let body;
-       if(confirm("더할래 곱할래")==true)
-       {
-        body="return a+b;";
-       }
-       else{
-        body="return a*b;";
-       }
-       let add= new function("a", "b", body);
-       document.write("result= "+add(2,3)+"<br>"); 
+      function fact(n)
+      {
+        if(n==1)
+        {
+            return 1;
+        }
+        else{
+            return n*fact(n-1);
+        }
+        
+      }
+      document.write("5!="+fact(5)+"<br>");
         
     </script>
 
