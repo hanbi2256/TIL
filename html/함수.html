@@ -10,13 +10,11 @@
 
 <body>
     <script>
-        document.write("5!="+function(n)
-        {
-            if(n==1) return 1;
-            else return n*arguments.callee(n-1);
-            
-         }
-        (5)+"<br>");
+        document.write('Number("1234"):'+Number("1234")+"<br>");
+        document.write('Number("12개"):'+Number("12개")+"<br>");
+        document.write('parseInt("12개"):'+parseInt("12개")+"<br>");
+        document.write('Number("3.1415):'+Number("3.1415")+"<br>");
+        document.write('parseFloat("3.14원주율"):'+parseFloat("3.14원주율")+"<br>");
         
     </script>
 
