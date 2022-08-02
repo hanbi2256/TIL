@@ -10,17 +10,17 @@
 
 <body>
     <script>
-        function outer()
+        function outcount()
         {
-            let value=1234;
-            function inner()
-            {
-                document.write("value="+value+"<br>");
-            }
-            return inner;
+            let count=0;
+
+            setInterval(function(){
+                count++;
+                document.write(count+"초 지났습니다."+"<br>");
+            },1000);
         }
-        let outin=outer();
-        outin();
+        outcount();
+        
     </script>
 
 
