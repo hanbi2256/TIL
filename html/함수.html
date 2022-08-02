@@ -10,18 +10,13 @@
 
 <body>
     <script>
-      function fact(n)
-      {
-        if(n==1)
+        document.write("5!="+function(n)
         {
-            return 1;
-        }
-        else{
-            return n*fact(n-1);
-        }
-        
-      }
-      document.write("5!="+fact(5)+"<br>");
+            if(n==1) return 1;
+            else return n*arguments.callee(n-1);
+            
+         }
+        (5)+"<br>");
         
     </script>
 
