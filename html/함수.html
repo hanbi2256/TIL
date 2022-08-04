@@ -10,15 +10,16 @@
 
 <body>
     <script>
-        let hex="0x1a"
-        document.write("0x1a="+parseInt(hex, 16)+"<br>");
-        document.write("0x1a="+parseInt(hex)+"<br>");
-        document.write("0x1a="+Number(hex)+"<br>");
-
-        let decimal="12"
-        document.write("12(10)="+parseInt(decimal, 10)+"<br>");
-        document.write("12(16)="+parseInt(decimal, 16)+"<br>");
-        
+      let a=2/0;
+      if(isFinite(a)==false)
+      {
+        document.write("무한대값입니다"+"<br");
+      }
+      let b=0/0;
+      if(isNaN(b))
+      {
+        document.write("올바를 숫자가 아닙니다"+"<br>");
+      }
     </script>
 
 
