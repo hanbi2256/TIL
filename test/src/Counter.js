@@ -21,3 +21,5 @@ function Counter() {
 }
 
 export default Counter;
+
+//버튼을 누르면 수가 증가 & 감소

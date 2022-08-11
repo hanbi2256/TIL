@@ -1,9 +1,10 @@
 import React from 'react';
+import InputSample from './InputSample';
 
 
 function App() {
   return (
-   <>안녕하세요</>
+   <InputSample/>
   );
 }
 
