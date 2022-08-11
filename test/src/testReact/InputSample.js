@@ -24,4 +24,4 @@ function InputSample() {
 
 export default InputSample;
 
-//입력한 값을 초기화 해주는
+//💡입력한 값을 초기화 해주는

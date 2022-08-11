@@ -1,10 +1,10 @@
 import React from 'react';
-import InputSample from './testReact/InputSample';
+import InputSample2 from './InputSample2.js';
 
 
 function App() {
   return (
-   <InputSample/>
+   <InputSample2/>
   );
 }
 
