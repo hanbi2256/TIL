@@ -1,9 +1,9 @@
 import React from 'react';
-import Hello from './hello';
+
 
 function App() {
   return (
-    <Hello name="한비님" />
+    <>안녕하세요</>
   );
 }
 
