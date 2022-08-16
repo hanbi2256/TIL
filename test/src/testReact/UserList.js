@@ -3,6 +3,7 @@ import React from 'react';
 function User({ user,onRemove }) {
     return (
         <div>
+            style{{}}
             <b>{user.username}</b> <span>({user.email})</span>
             <button onClick={()=>onRemove(user.id)}>삭제</button>
         </div>
