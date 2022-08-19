@@ -23,4 +23,4 @@ function CreateUser({ username, email, onChange, onCreate }) {
 export default CreateUser;
 
 //새로운 계정 등록
-//계정삭제
+// 등록된 계정삭제
