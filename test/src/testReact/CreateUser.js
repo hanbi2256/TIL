@@ -21,7 +21,3 @@ function CreateUser({ username, email, onChange, onCreate }) {
 }
 
 export default CreateUser;
-
-//새로운 계정 등록
-// 등록된 계정삭제
-//정 말 하 기 싫 다 ^^
