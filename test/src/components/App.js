@@ -45,3 +45,4 @@ function App() {
 }
 
 export default App;
+//공부존나싫다!
