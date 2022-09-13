@@ -1,14 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
-function User({ user, onRemove, onToggle }) {
-    useEffect(() => {
-        console.log('user 값이 설정됨');
-        console.log(user);
-        return () => {
-            console.log('user 가 바뀌기 전..');
-            console.log(user);
-        };
-    }, [user]);
+const User = React.memo(function User({ user }) {
     return (
         <div>
             <b
@@ -16,31 +8,23 @@ function User({ user, onRemove, onToggle }) {
                     cursor: 'pointer',
                     color: user.active ? 'green' : 'black'
                 }}
-                onClick={() => onToggle(user.id)}
+                onClick={() => { }}
             >
                 {user.username}
             </b>
             &nbsp;
             <span>({user.email})</span>
-            <button onClick={() => onRemove(user.id)}>삭제</button>
+            <button onClick={() => { }}>삭제</button>
         </div>
     );
-}
+});
 
-function UserList({ users, onRemove, onToggle }) {
+function UserList({user})
     return (
         <div>
-            {users.map(user => (
-                <User
-                    user={user}
-                    key={user.id}
-                    onRemove={onRemove}
-                    onToggle={onToggle}
-                />
+            {user.map(user =>(
+                <User user={user} key={user.id}/>
             ))}
         </div>
-    );
-}
+    )
 
-export default React.memo(UserList);
-//진찌 미안 오늘만 가짜 커밋할게
