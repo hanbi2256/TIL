@@ -53,3 +53,31 @@ function reducer(state, action) {
           return state;
   }
 }
+
+// UserDispatch 라는 이름으로 내보내줍니다.
+export const UserDispatch = React.createContext(null);
+
+
+function App() {
+  const [{ username, email }, onChange, onReset]=useInputs({
+    username:'',
+    email:''
+  });
+  const [state, dispatch]=useReducer(reducer, initialState);
+  const nextid=useRef(4);
+
+  const {users}=state;
+
+  const onCreate=useCallback(()=>{
+    dispatch({
+      type:'CREATE_USER',
+      user:{
+        id:nextid.current,
+        username,
+        email
+      }
+    });
+    on
+  })
+}
+
