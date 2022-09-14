@@ -19,12 +19,14 @@ const User = React.memo(function User({ user }) {
     );
 });
 
-function UserList({user})
+function UserList({ users }) {
     return (
         <div>
-            {user.map(user =>(
-                <User user={user} key={user.id}/>
+            {users.map(user => (
+                <User user={user} key={user.id} />
             ))}
         </div>
-    )
+    );
+}
 
+export default React.memo(UserList);
