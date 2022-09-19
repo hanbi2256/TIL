@@ -1,34 +1,52 @@
-import { useState } from 'react';
-import TodoBoard from './components/TodoBoard';
+import React, {Component } from 'react';
 
-
-
-//인풋창이있고 버튼이 있다.
-//인풋창에 값을 입력하고 버튼을 클릭하면 아이템이 추가가 된다.
-//아이템 삭제버튼을 누르면 삭제가 가능하다
-
-function App() {
-  const [inputValue, setInputValue] = useState('')
-  const [todolist, setTodolist] = useState([])
-
-  const addItem = () => {
-    setTodolist([...todolist, inputValue])//기존에 있는 값은 유지하고 새로운 inputValue 넣기
+class Subject extends Component {
+  render() {
+    return (
+      <header>
+        <h1>Web</h1>
+        world wide web!
+      </header>
+    );
   }
-
-  return (
-    <main style={{
-      color: 'lightblue'
-    }}>
-      <input
-        style={{
-          color: 'lightblue'
-        }}
-        value={inputValue} type="text" onChange=
-        {(event) => setInputValue(event.target.value)} />
-      <button onClick={addItem}>추가</button>
-      <TodoBoard todolist={todolist} />
-    </main>
-  )
 }
 
+class TOC extends Component{
+  render(){
+    return(
+      <nav>
+        <ul>
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="2.html">CSS</a></li>
+        <li><a href="3.html">JavaScript</a></li>
+      </ul>
+      </nav>
+    )
+  }
+}
+
+class Content extends Component{
+  render(){
+    return(
+      <article>
+        <h2>HTML</h2>
+      HTMl is HyperText Markup Language
+      </article>
+      
+    )
+  }
+}
+
+class App extends Component {
+  render() {
+    return (
+      <div className='App'>
+        <Subject></Subject>
+        <TOC></TOC>
+        <Content></Content>
+      </div>
+    );
+  }
+}
 export default App;
+
